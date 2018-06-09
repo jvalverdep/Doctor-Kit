@@ -7,22 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4517FFB20CB6D66004E8CB8 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4517FFA20CB6D66004E8CB8 /* Authentication.storyboard */; };
+		F4517FFD20CB6D87004E8CB8 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4517FFC20CB6D87004E8CB8 /* Splash.storyboard */; };
+		F451800020CB6DC5004E8CB8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4517FFF20CB6DC5004E8CB8 /* LoginViewController.swift */; };
+		F451800420CB7257004E8CB8 /* RoundCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451800320CB7257004E8CB8 /* RoundCornerButton.swift */; };
+		F451800720CB7421004E8CB8 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451800620CB7421004E8CB8 /* ColorUtil.swift */; };
+		F451800A20CB74CA004E8CB8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451800920CB74CA004E8CB8 /* Global.swift */; };
+		F451800D20CB76F8004E8CB8 /* SimpleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451800C20CB76F8004E8CB8 /* SimpleTextField.swift */; };
+		F451800F20CB7956004E8CB8 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451800E20CB7956004E8CB8 /* Gradient.swift */; };
 		F4E7AB9020B05A870032AD00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E7AB8F20B05A870032AD00 /* AppDelegate.swift */; };
-		F4E7AB9220B05A870032AD00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E7AB9120B05A870032AD00 /* ViewController.swift */; };
-		F4E7AB9520B05A870032AD00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E7AB9320B05A870032AD00 /* Main.storyboard */; };
 		F4E7AB9820B05A870032AD00 /* Doctor_Kit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4E7AB9620B05A870032AD00 /* Doctor_Kit.xcdatamodeld */; };
 		F4E7AB9A20B05A870032AD00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E7AB9920B05A870032AD00 /* Assets.xcassets */; };
-		F4E7AB9D20B05A870032AD00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E7AB9B20B05A870032AD00 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4517FFA20CB6D66004E8CB8 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		F4517FFC20CB6D87004E8CB8 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		F4517FFF20CB6DC5004E8CB8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F451800320CB7257004E8CB8 /* RoundCornerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCornerButton.swift; sourceTree = "<group>"; };
+		F451800620CB7421004E8CB8 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
+		F451800920CB74CA004E8CB8 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		F451800C20CB76F8004E8CB8 /* SimpleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextField.swift; sourceTree = "<group>"; };
+		F451800E20CB7956004E8CB8 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		F4E7AB8C20B05A870032AD00 /* Doctor-Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doctor-Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E7AB8F20B05A870032AD00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F4E7AB9120B05A870032AD00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F4E7AB9420B05A870032AD00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4E7AB9720B05A870032AD00 /* Doctor_Kit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Doctor_Kit.xcdatamodel; sourceTree = "<group>"; };
 		F4E7AB9920B05A870032AD00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F4E7AB9C20B05A870032AD00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4E7AB9E20B05A870032AD00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +47,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F4517FF620CB6D34004E8CB8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4517FFE20CB6DA9004E8CB8 /* Authentication */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F4517FF720CB6D3D004E8CB8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F4517FFA20CB6D66004E8CB8 /* Authentication.storyboard */,
+				F4517FFC20CB6D87004E8CB8 /* Splash.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F4517FF920CB6D58004E8CB8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F4517FFE20CB6DA9004E8CB8 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F4517FFF20CB6DC5004E8CB8 /* LoginViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F451800120CB7215004E8CB8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F451800B20CB7650004E8CB8 /* TextField */,
+				F451800220CB721C004E8CB8 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F451800220CB721C004E8CB8 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F451800320CB7257004E8CB8 /* RoundCornerButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F451800520CB740B004E8CB8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F451800620CB7421004E8CB8 /* ColorUtil.swift */,
+				F451800E20CB7956004E8CB8 /* Gradient.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F451800820CB74BE004E8CB8 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				F451800920CB74CA004E8CB8 /* Global.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		F451800B20CB7650004E8CB8 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				F451800C20CB76F8004E8CB8 /* SimpleTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
 		F4E7AB8320B05A870032AD00 = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +140,14 @@
 		F4E7AB8E20B05A870032AD00 /* Doctor-Kit */ = {
 			isa = PBXGroup;
 			children = (
+				F451800820CB74BE004E8CB8 /* Global */,
+				F451800520CB740B004E8CB8 /* Util */,
+				F451800120CB7215004E8CB8 /* Views */,
+				F4517FF920CB6D58004E8CB8 /* Resources */,
+				F4517FF720CB6D3D004E8CB8 /* Storyboard */,
+				F4517FF620CB6D34004E8CB8 /* Controller */,
 				F4E7AB8F20B05A870032AD00 /* AppDelegate.swift */,
-				F4E7AB9120B05A870032AD00 /* ViewController.swift */,
-				F4E7AB9320B05A870032AD00 /* Main.storyboard */,
 				F4E7AB9920B05A870032AD00 /* Assets.xcassets */,
-				F4E7AB9B20B05A870032AD00 /* LaunchScreen.storyboard */,
 				F4E7AB9E20B05A870032AD00 /* Info.plist */,
 				F4E7AB9620B05A870032AD00 /* Doctor_Kit.xcdatamodeld */,
 			);
@@ -126,9 +213,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4E7AB9D20B05A870032AD00 /* LaunchScreen.storyboard in Resources */,
 				F4E7AB9A20B05A870032AD00 /* Assets.xcassets in Resources */,
-				F4E7AB9520B05A870032AD00 /* Main.storyboard in Resources */,
+				F4517FFB20CB6D66004E8CB8 /* Authentication.storyboard in Resources */,
+				F4517FFD20CB6D87004E8CB8 /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,32 +226,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4E7AB9220B05A870032AD00 /* ViewController.swift in Sources */,
+				F451800D20CB76F8004E8CB8 /* SimpleTextField.swift in Sources */,
+				F451800020CB6DC5004E8CB8 /* LoginViewController.swift in Sources */,
+				F451800A20CB74CA004E8CB8 /* Global.swift in Sources */,
 				F4E7AB9820B05A870032AD00 /* Doctor_Kit.xcdatamodeld in Sources */,
 				F4E7AB9020B05A870032AD00 /* AppDelegate.swift in Sources */,
+				F451800720CB7421004E8CB8 /* ColorUtil.swift in Sources */,
+				F451800420CB7257004E8CB8 /* RoundCornerButton.swift in Sources */,
+				F451800F20CB7956004E8CB8 /* Gradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F4E7AB9320B05A870032AD00 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4E7AB9420B05A870032AD00 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F4E7AB9B20B05A870032AD00 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4E7AB9C20B05A870032AD00 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F4E7AB9F20B05A870032AD00 /* Debug */ = {
