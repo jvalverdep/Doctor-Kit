@@ -28,6 +28,9 @@
                                 <state key="normal" title="Sign in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInAction:" destination="NJg-SD-kE6" eventType="touchUpInside" id="Biv-JR-4ad"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KlT-7n-Nf7">
                                 <rect key="frame" x="68" y="617" width="239" height="30"/>
@@ -81,7 +84,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8PW-Mu-vkM" firstAttribute="centerX" secondItem="bgS-5e-jXq" secondAttribute="centerX" id="2oi-Ra-CRD"/>
                             <constraint firstItem="f7h-i1-anD" firstAttribute="top" secondItem="T8s-Jf-BgI" secondAttribute="bottom" constant="50" id="Dcj-qU-dw0"/>
@@ -98,10 +101,21 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aY1-Id-MNW"/>
                     </view>
+                    <connections>
+                        <segue destination="bhc-rj-Mqd" kind="show" identifier="goHome" id="v5c-1s-LyJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w55-su-Dw9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="117.39130434782609"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="2Rq-TW-aBF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="bhc-rj-Mqd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PvK-5R-EUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="117"/>
         </scene>
     </scenes>
 </document>

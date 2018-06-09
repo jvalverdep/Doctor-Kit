@@ -15,16 +15,19 @@ class LoginViewController: UIViewController {
 
     }
 	
-	override func viewWillAppear(_ animated: Bool) {
-		super.viewWillAppear(animated)
-		
+	override func performSegue(withIdentifier identifier: String, sender: Any?) {
+		if identifier == "goHome"{
+			
+			let homeViewController = UIStoryboard(name: "Home.storyboard", bundle: nil).instantiateInitialViewController()
+			self.present(homeViewController!, animated: true, completion: nil)
+		}
 	}
 	
-	override func viewDidLayoutSubviews() {
-		super.viewDidLayoutSubviews()
-		
+	
+	@IBAction func signInAction(_ sender: RoundCornerButton) {
+		performSegue(withIdentifier: "goHome", sender: nil)
 	}
-
+	
 
 
 }
