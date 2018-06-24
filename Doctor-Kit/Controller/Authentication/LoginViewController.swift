@@ -15,14 +15,13 @@ class LoginViewController: UIViewController {
 
     }
 	
-	override func performSegue(withIdentifier identifier: String, sender: Any?) {
-		if identifier == "goHome"{
-			
-			let homeViewController = UIStoryboard(name: "Home.storyboard", bundle: nil).instantiateInitialViewController()
-			self.present(homeViewController!, animated: true, completion: nil)
-		}
-	}
-	
+//	override func performSegue(withIdentifier identifier: String, sender: Any?) {
+//		if identifier == "goHome"{
+//			let homeViewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController()
+//			self.present(homeViewController!, animated: true, completion: nil)
+//		}
+//	}
+//	
 	
 	@IBAction func signInAction(_ sender: RoundCornerButton) {
 		performSegue(withIdentifier: "goHome", sender: nil)

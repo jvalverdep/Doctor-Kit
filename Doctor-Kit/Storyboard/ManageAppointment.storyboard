@@ -13,14 +13,33 @@
         <!--Appointments Scheduled-->
         <scene sceneID="u4x-1k-vss">
             <objects>
-                <viewController id="87j-lb-xaz" sceneMemberID="viewController">
+                <viewController id="87j-lb-xaz" customClass="AppointmentsViewController" customModule="Doctor_Kit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SxT-br-eUt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UxZ-eR-nww">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="87j-lb-xaz" id="hqS-Rm-wax"/>
+                                    <outlet property="delegate" destination="87j-lb-xaz" id="Urm-f7-JGD"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UxZ-eR-nww" firstAttribute="top" secondItem="hxE-9W-sVG" secondAttribute="top" id="FwR-Rz-cdK"/>
+                            <constraint firstItem="UxZ-eR-nww" firstAttribute="leading" secondItem="hxE-9W-sVG" secondAttribute="leading" id="Y1K-M3-N8m"/>
+                            <constraint firstItem="UxZ-eR-nww" firstAttribute="bottom" secondItem="hxE-9W-sVG" secondAttribute="bottom" id="eQk-ae-x5Y"/>
+                            <constraint firstItem="UxZ-eR-nww" firstAttribute="trailing" secondItem="hxE-9W-sVG" secondAttribute="trailing" id="kiH-5y-FZY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hxE-9W-sVG"/>
                     </view>
                     <navigationItem key="navigationItem" title="Appointments Scheduled" id="Zic-3G-6aA"/>
+                    <connections>
+                        <outlet property="appointmentsTableView" destination="UxZ-eR-nww" id="VYe-LB-HNZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cw-pP-Cuh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

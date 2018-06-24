@@ -15,11 +15,16 @@
 		F451800A20CB74CA004E8CB8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451800920CB74CA004E8CB8 /* Global.swift */; };
 		F451800D20CB76F8004E8CB8 /* SimpleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451800C20CB76F8004E8CB8 /* SimpleTextField.swift */; };
 		F451800F20CB7956004E8CB8 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451800E20CB7956004E8CB8 /* Gradient.swift */; };
-		F451801120CC0FE7004E8CB8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F451801020CC0FE7004E8CB8 /* Home.storyboard */; };
 		F451801320CC1059004E8CB8 /* ManageAppointment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F451801220CC1059004E8CB8 /* ManageAppointment.storyboard */; };
 		F451801520CC1084004E8CB8 /* ManageSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F451801420CC1084004E8CB8 /* ManageSchedule.storyboard */; };
 		F451801720CC121D004E8CB8 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F451801620CC121D004E8CB8 /* Dashboard.storyboard */; };
 		F451801A20CC14CA004E8CB8 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F451801920CC14CA004E8CB8 /* DashboardViewController.swift */; };
+		F4DFF46A20E0306300E70E32 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFF46820E0306300E70E32 /* ScheduleTableViewCell.swift */; };
+		F4DFF46B20E0306300E70E32 /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4DFF46920E0306300E70E32 /* ScheduleTableViewCell.xib */; };
+		F4DFF46E20E032EC00E70E32 /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFF46D20E032EC00E70E32 /* AppointmentsViewController.swift */; };
+		F4DFF47120E034A500E70E32 /* Medic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFF47020E034A500E70E32 /* Medic.swift */; };
+		F4DFF47320E034BD00E70E32 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFF47220E034BD00E70E32 /* Appointment.swift */; };
+		F4DFF47420E0371C00E70E32 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F451801020CC0FE7004E8CB8 /* Home.storyboard */; };
 		F4E7AB9020B05A870032AD00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E7AB8F20B05A870032AD00 /* AppDelegate.swift */; };
 		F4E7AB9820B05A870032AD00 /* Doctor_Kit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4E7AB9620B05A870032AD00 /* Doctor_Kit.xcdatamodeld */; };
 		F4E7AB9A20B05A870032AD00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E7AB9920B05A870032AD00 /* Assets.xcassets */; };
@@ -39,6 +44,11 @@
 		F451801420CC1084004E8CB8 /* ManageSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ManageSchedule.storyboard; sourceTree = "<group>"; };
 		F451801620CC121D004E8CB8 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		F451801920CC14CA004E8CB8 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		F4DFF46820E0306300E70E32 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		F4DFF46920E0306300E70E32 /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		F4DFF46D20E032EC00E70E32 /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
+		F4DFF47020E034A500E70E32 /* Medic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medic.swift; sourceTree = "<group>"; };
+		F4DFF47220E034BD00E70E32 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		F4E7AB8C20B05A870032AD00 /* Doctor-Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doctor-Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E7AB8F20B05A870032AD00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4E7AB9720B05A870032AD00 /* Doctor_Kit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Doctor_Kit.xcdatamodel; sourceTree = "<group>"; };
@@ -60,6 +70,7 @@
 		F4517FF620CB6D34004E8CB8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F4DFF46C20E032AB00E70E32 /* ManageAppointment */,
 				F451801820CC14A9004E8CB8 /* Dashboard */,
 				F4517FFE20CB6DA9004E8CB8 /* Authentication */,
 			);
@@ -97,6 +108,7 @@
 		F451800120CB7215004E8CB8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F4DFF46620E0303200E70E32 /* TableView */,
 				F451800B20CB7650004E8CB8 /* TextField */,
 				F451800220CB721C004E8CB8 /* Buttons */,
 			);
@@ -144,6 +156,40 @@
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
+		F4DFF46620E0303200E70E32 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFF46720E0303C00E70E32 /* ScheduleCell */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		F4DFF46720E0303C00E70E32 /* ScheduleCell */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFF46820E0306300E70E32 /* ScheduleTableViewCell.swift */,
+				F4DFF46920E0306300E70E32 /* ScheduleTableViewCell.xib */,
+			);
+			path = ScheduleCell;
+			sourceTree = "<group>";
+		};
+		F4DFF46C20E032AB00E70E32 /* ManageAppointment */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFF46D20E032EC00E70E32 /* AppointmentsViewController.swift */,
+			);
+			path = ManageAppointment;
+			sourceTree = "<group>";
+		};
+		F4DFF46F20E0346D00E70E32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4DFF47020E034A500E70E32 /* Medic.swift */,
+				F4DFF47220E034BD00E70E32 /* Appointment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F4E7AB8320B05A870032AD00 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +209,7 @@
 		F4E7AB8E20B05A870032AD00 /* Doctor-Kit */ = {
 			isa = PBXGroup;
 			children = (
+				F4DFF46F20E0346D00E70E32 /* Models */,
 				F451800820CB74BE004E8CB8 /* Global */,
 				F451800520CB740B004E8CB8 /* Util */,
 				F451800120CB7215004E8CB8 /* Views */,
@@ -236,13 +283,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DFF47420E0371C00E70E32 /* Home.storyboard in Resources */,
 				F4E7AB9A20B05A870032AD00 /* Assets.xcassets in Resources */,
 				F451801320CC1059004E8CB8 /* ManageAppointment.storyboard in Resources */,
+				F4DFF46B20E0306300E70E32 /* ScheduleTableViewCell.xib in Resources */,
 				F4517FFB20CB6D66004E8CB8 /* Authentication.storyboard in Resources */,
 				F4517FFD20CB6D87004E8CB8 /* Splash.storyboard in Resources */,
 				F451801520CC1084004E8CB8 /* ManageSchedule.storyboard in Resources */,
 				F451801720CC121D004E8CB8 /* Dashboard.storyboard in Resources */,
-				F451801120CC0FE7004E8CB8 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,12 +301,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4DFF47320E034BD00E70E32 /* Appointment.swift in Sources */,
 				F451800D20CB76F8004E8CB8 /* SimpleTextField.swift in Sources */,
 				F451801A20CC14CA004E8CB8 /* DashboardViewController.swift in Sources */,
+				F4DFF46E20E032EC00E70E32 /* AppointmentsViewController.swift in Sources */,
 				F451800020CB6DC5004E8CB8 /* LoginViewController.swift in Sources */,
+				F4DFF47120E034A500E70E32 /* Medic.swift in Sources */,
 				F451800A20CB74CA004E8CB8 /* Global.swift in Sources */,
 				F4E7AB9820B05A870032AD00 /* Doctor_Kit.xcdatamodeld in Sources */,
 				F4E7AB9020B05A870032AD00 /* AppDelegate.swift in Sources */,
+				F4DFF46A20E0306300E70E32 /* ScheduleTableViewCell.swift in Sources */,
 				F451800720CB7421004E8CB8 /* ColorUtil.swift in Sources */,
 				F451800420CB7257004E8CB8 /* RoundCornerButton.swift in Sources */,
 				F451800F20CB7956004E8CB8 /* Gradient.swift in Sources */,
