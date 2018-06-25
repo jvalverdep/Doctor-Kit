@@ -25,6 +25,7 @@
 		F4DFF47120E034A500E70E32 /* Medic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFF47020E034A500E70E32 /* Medic.swift */; };
 		F4DFF47320E034BD00E70E32 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFF47220E034BD00E70E32 /* Appointment.swift */; };
 		F4DFF47420E0371C00E70E32 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F451801020CC0FE7004E8CB8 /* Home.storyboard */; };
+		F4DFF47620E06F3B00E70E32 /* AppointmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DFF47520E06F3B00E70E32 /* AppointmentDetailViewController.swift */; };
 		F4E7AB9020B05A870032AD00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E7AB8F20B05A870032AD00 /* AppDelegate.swift */; };
 		F4E7AB9820B05A870032AD00 /* Doctor_Kit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4E7AB9620B05A870032AD00 /* Doctor_Kit.xcdatamodeld */; };
 		F4E7AB9A20B05A870032AD00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E7AB9920B05A870032AD00 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		F4DFF46D20E032EC00E70E32 /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
 		F4DFF47020E034A500E70E32 /* Medic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medic.swift; sourceTree = "<group>"; };
 		F4DFF47220E034BD00E70E32 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		F4DFF47520E06F3B00E70E32 /* AppointmentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDetailViewController.swift; sourceTree = "<group>"; };
 		F4E7AB8C20B05A870032AD00 /* Doctor-Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doctor-Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E7AB8F20B05A870032AD00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4E7AB9720B05A870032AD00 /* Doctor_Kit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Doctor_Kit.xcdatamodel; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				F4DFF46D20E032EC00E70E32 /* AppointmentsViewController.swift */,
+				F4DFF47520E06F3B00E70E32 /* AppointmentDetailViewController.swift */,
 			);
 			path = ManageAppointment;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				F4E7AB9020B05A870032AD00 /* AppDelegate.swift in Sources */,
 				F4DFF46A20E0306300E70E32 /* ScheduleTableViewCell.swift in Sources */,
 				F451800720CB7421004E8CB8 /* ColorUtil.swift in Sources */,
+				F4DFF47620E06F3B00E70E32 /* AppointmentDetailViewController.swift in Sources */,
 				F451800420CB7257004E8CB8 /* RoundCornerButton.swift in Sources */,
 				F451800F20CB7956004E8CB8 /* Gradient.swift in Sources */,
 			);

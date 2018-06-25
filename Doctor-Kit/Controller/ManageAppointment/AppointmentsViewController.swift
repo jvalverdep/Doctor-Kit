@@ -20,11 +20,21 @@ class AppointmentsViewController: UIViewController {
 			appointmentsTableView.register(UINib(nibName: "ScheduleTableViewCell", bundle: nil), forCellReuseIdentifier: "appointmentScheduledCell")
     }
 	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		self.tabBarController?.tabBar.isHidden = false
+	}
+	
+	
 }
 
 
 
 extension AppointmentsViewController: UITableViewDelegate{
+
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+		performSegue(withIdentifier: "goAppointmentDetail", sender: nil)
+	}
 	
 }
 
@@ -33,14 +43,10 @@ extension AppointmentsViewController: UITableViewDataSource{
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return appointments.count
 	}
-	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		
 		let cell = tableView.dequeueReusableCell(withIdentifier: "appointmentScheduledCell") as! ScheduleTableViewCell
-		
 		return cell
 	}
-	
 }
 
 
