@@ -29,6 +29,7 @@
 		F4E7AB9020B05A870032AD00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E7AB8F20B05A870032AD00 /* AppDelegate.swift */; };
 		F4E7AB9820B05A870032AD00 /* Doctor_Kit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4E7AB9620B05A870032AD00 /* Doctor_Kit.xcdatamodeld */; };
 		F4E7AB9A20B05A870032AD00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E7AB9920B05A870032AD00 /* Assets.xcassets */; };
+		F4FB818A20E67B03000D03D1 /* AppointmentEditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB818920E67B03000D03D1 /* AppointmentEditionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		F4E7AB9720B05A870032AD00 /* Doctor_Kit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Doctor_Kit.xcdatamodel; sourceTree = "<group>"; };
 		F4E7AB9920B05A870032AD00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4E7AB9E20B05A870032AD00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4FB818920E67B03000D03D1 /* AppointmentEditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentEditionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			children = (
 				F4DFF46D20E032EC00E70E32 /* AppointmentsViewController.swift */,
 				F4DFF47520E06F3B00E70E32 /* AppointmentDetailViewController.swift */,
+				F4FB818920E67B03000D03D1 /* AppointmentEditionViewController.swift */,
 			);
 			path = ManageAppointment;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				F4DFF47320E034BD00E70E32 /* Appointment.swift in Sources */,
 				F451800D20CB76F8004E8CB8 /* SimpleTextField.swift in Sources */,
 				F451801A20CC14CA004E8CB8 /* DashboardViewController.swift in Sources */,
+				F4FB818A20E67B03000D03D1 /* AppointmentEditionViewController.swift in Sources */,
 				F4DFF46E20E032EC00E70E32 /* AppointmentsViewController.swift in Sources */,
 				F451800020CB6DC5004E8CB8 /* LoginViewController.swift in Sources */,
 				F4DFF47120E034A500E70E32 /* Medic.swift in Sources */,
