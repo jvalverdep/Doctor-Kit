@@ -1,0 +1,15 @@
+PODS:
+  - IQDropDownTextField (1.1.1)
+  - TableFlip (1.2)
+
+DEPENDENCIES:
+  - IQDropDownTextField
+  - TableFlip
+
+SPEC CHECKSUMS:
+  IQDropDownTextField: 3d2e5728a2b83ff5dbb14cb9b497a80005124cbe
+  TableFlip: 2ae22773412b295a7cbc54d95b44085bb28092f6
+
+PODFILE CHECKSUM: 898f91126a82ecb7ce5eae359d344fe077a03294
+
+COCOAPODS: 1.4.0

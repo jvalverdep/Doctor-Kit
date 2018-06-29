@@ -10,27 +10,146 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Manage Work Schedule-->
+        <!--Work Schedule-->
         <scene sceneID="PQP-Zr-TUf">
             <objects>
-                <viewController id="r7y-cW-PrH" sceneMemberID="viewController">
+                <viewController id="r7y-cW-PrH" customClass="DoctorScheduleViewController" customModule="Doctor_Kit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cpj-OU-Jzp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lzr-gb-2tR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="r7y-cW-PrH" id="NQz-Xb-iYR"/>
+                                    <outlet property="delegate" destination="r7y-cW-PrH" id="6Wq-tw-zUF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lzr-gb-2tR" firstAttribute="top" secondItem="coe-nM-6zs" secondAttribute="top" id="Szy-3a-T5w"/>
+                            <constraint firstItem="Lzr-gb-2tR" firstAttribute="trailing" secondItem="coe-nM-6zs" secondAttribute="trailing" id="jj2-lX-iaP"/>
+                            <constraint firstItem="Lzr-gb-2tR" firstAttribute="bottom" secondItem="coe-nM-6zs" secondAttribute="bottom" id="xIb-aZ-C0I"/>
+                            <constraint firstItem="Lzr-gb-2tR" firstAttribute="leading" secondItem="coe-nM-6zs" secondAttribute="leading" id="yw6-GA-qTY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="coe-nM-6zs"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Manage Work Schedule" id="s92-M4-kmy"/>
+                    <navigationItem key="navigationItem" title="Work Schedule" id="s92-M4-kmy">
+                        <barButtonItem key="backBarButtonItem" title="back" id="hG5-ud-FI5"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Xta-cp-RSc"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="doctorScheduleTableView" destination="Lzr-gb-2tR" id="41a-Nn-99u"/>
+                        <segue destination="fby-l1-coy" kind="show" identifier="addSchedule" id="K44-BX-ifU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R42-EN-Vlp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="561" y="215"/>
+            <point key="canvasLocation" x="560.79999999999995" y="214.54272863568218"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Schedule Detail-->
+        <scene sceneID="jog-3N-kXI">
+            <objects>
+                <viewController id="fby-l1-coy" customClass="AddNewScheduleViewController" customModule="Doctor_Kit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d0r-DD-Gz6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the days and hours that you want to attent your pacients" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93p-Ud-Zzf">
+                                <rect key="frame" x="25" y="89" width="325" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="PiR-1A-17w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6yZ-iR-dui">
+                                <rect key="frame" x="25" y="174" width="325" height="80"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UPm-bN-OMc">
+                                        <rect key="frame" x="0.0" y="0.0" width="162.5" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYq-CH-xaG">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFX-Ug-7ex">
+                                                <rect key="frame" x="0.0" y="50" width="162.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gkt-VY-Lqu">
+                                        <rect key="frame" x="162.5" y="0.0" width="162.5" height="80"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ima-ek-qP5" customClass="IQDropDownTextField">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZsH-Zo-7st" customClass="IQDropDownTextField">
+                                                <rect key="frame" x="0.0" y="50" width="162.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="W3l-8U-LiX"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgx-A2-H2p" customClass="RoundCornerButton" customModule="Doctor_Kit" customModuleProvider="target">
+                                <rect key="frame" x="25" y="279" width="325" height="60"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="62w-kr-2YI"/>
+                                </constraints>
+                                <state key="normal" title="add">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jw3-Lg-fXd" firstAttribute="trailing" secondItem="6yZ-iR-dui" secondAttribute="trailing" constant="25" id="7Py-8y-dNI"/>
+                            <constraint firstItem="93p-Ud-Zzf" firstAttribute="top" secondItem="jw3-Lg-fXd" secondAttribute="top" constant="25" id="D5t-Xt-X6L"/>
+                            <constraint firstItem="Bgx-A2-H2p" firstAttribute="top" secondItem="6yZ-iR-dui" secondAttribute="bottom" constant="25" id="L7x-9i-SJO"/>
+                            <constraint firstItem="Bgx-A2-H2p" firstAttribute="leading" secondItem="jw3-Lg-fXd" secondAttribute="leading" constant="25" id="WgE-e7-dP8"/>
+                            <constraint firstItem="6yZ-iR-dui" firstAttribute="top" secondItem="93p-Ud-Zzf" secondAttribute="bottom" constant="25" id="YK5-X8-Ks6"/>
+                            <constraint firstItem="jw3-Lg-fXd" firstAttribute="trailing" secondItem="Bgx-A2-H2p" secondAttribute="trailing" constant="25" id="ZeW-R4-CMu"/>
+                            <constraint firstItem="93p-Ud-Zzf" firstAttribute="leading" secondItem="jw3-Lg-fXd" secondAttribute="leading" constant="25" id="bpu-A8-YT2"/>
+                            <constraint firstItem="6yZ-iR-dui" firstAttribute="leading" secondItem="jw3-Lg-fXd" secondAttribute="leading" constant="25" id="dJm-wt-ZTl"/>
+                            <constraint firstItem="jw3-Lg-fXd" firstAttribute="trailing" secondItem="93p-Ud-Zzf" secondAttribute="trailing" constant="25" id="uUE-zw-La6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jw3-Lg-fXd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Schedule Detail" id="kun-zH-p64"/>
+                    <connections>
+                        <outlet property="daySelectionTextField" destination="Ima-ek-qP5" id="dxI-PV-B3l"/>
+                        <outlet property="hoursSelectionTextField" destination="ZsH-Zo-7st" id="7To-8n-uap"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="26G-4q-oh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1357.5999999999999" y="214.54272863568218"/>
+        </scene>
+        <!--Schedule-->
         <scene sceneID="tDU-Zg-ILt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BXh-BA-1hv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Schedule" id="YvI-Z4-iAh"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0rd-o2-zaD">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
