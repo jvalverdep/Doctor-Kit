@@ -44,7 +44,7 @@ class AddNewScheduleViewController: UIViewController {
 			menuView.delegate = self
 			calendarView.delegate = self
 			menuView.backgroundColor = ColorUtil.hexStringToUIColor(hex: COLOR_BASE)
-			calendarView.backgroundColor = ColorUtil.hexStringToUIColor(hex: COLOR_SECONDARY)
+			calendarView.backgroundColor = ColorUtil.hexStringToUIColor(hex: COLOR_BASE)
 			daySelected = calendarView.manager.currentDate
 			daySelectionTextField.text = calendarView.manager.currentDate.zEnglishFormat()
     }
