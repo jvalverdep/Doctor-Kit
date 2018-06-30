@@ -10,4 +10,5 @@ target 'Doctor-Kit' do
   pod 'IQDropDownTextField'
   pod 'Alamofire', '~> 4.7'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'CVCalendar', '~> 1.6.1'
 end

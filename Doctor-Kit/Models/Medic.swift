@@ -8,11 +8,15 @@
 
 import Foundation
 
-
-class Medic{
+class Medic {
+	static let sharedInstance = Medic()
+	private init() {} //This prevents others from using the default '()' initializer for this class.
 	
-	
-	
+	var id = 2
+	var name = ""
+	var lastName = ""
+	var email = ""
+	var profession = ""
 	
 	
 }

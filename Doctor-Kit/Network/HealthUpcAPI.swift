@@ -14,7 +14,7 @@ class HealthUpcAPI {
 	//    private static let baseUrl = "http://54.92.239.141:8080"
 	
 	public static let getDoctorSchedules = "\(baseUrl)/doctors/%@"
-	public static let getPatientData = "\(baseUrl)/patients/%@"
+	public static let createSchedule = "\(baseUrl)/doctors/work_hours"
 	
 }
 

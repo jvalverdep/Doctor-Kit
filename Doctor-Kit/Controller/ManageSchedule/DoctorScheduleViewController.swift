@@ -19,8 +19,12 @@ class DoctorScheduleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 			doctorScheduleTableView.register(UINib(nibName: "DoctorScheduleTableViewCell", bundle: nil), forCellReuseIdentifier: "doctorScheduleCell")
-			getDoctorSchedules()
     }
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		getDoctorSchedules()
+	}
 	
 	func getDoctorSchedules() {
 		Alamofire.request(String(format: HealthUpcAPI.getDoctorSchedules, "2"), method: .get, parameters: nil).responseJSON(completionHandler: { response in
@@ -40,6 +44,14 @@ class DoctorScheduleViewController: UIViewController {
 			
 		})
 	}
+	
+	
+	@IBAction func addNewScheduleAction(_ sender: Any) {
+		performSegue(withIdentifier: "addSchedule", sender: nil)
+	}
+	
+	
+	
 	
 	
 }
