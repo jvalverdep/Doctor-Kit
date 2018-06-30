@@ -8,4 +8,6 @@ target 'Doctor-Kit' do
   # Pods for Doctor-Kit
   pod 'TableFlip'
   pod 'IQDropDownTextField'
+  pod 'Alamofire', '~> 4.7'
+  pod 'SwiftyJSON', '~> 4.0'
 end

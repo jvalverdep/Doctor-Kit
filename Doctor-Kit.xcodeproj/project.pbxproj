@@ -32,11 +32,52 @@
 		F4E78E6C20E6891700DDFD8E /* DoctorScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E78E6A20E6891700DDFD8E /* DoctorScheduleTableViewCell.xib */; };
 		F4E78E7120E6A5A400DDFD8E /* AddNewScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E78E7020E6A5A400DDFD8E /* AddNewScheduleViewController.swift */; };
 		F4E78E7320E6AC2300DDFD8E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E78E7220E6AC2300DDFD8E /* Constants.swift */; };
+		F4E78E7620E7202100DDFD8E /* HealthUpcAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E78E7520E7202100DDFD8E /* HealthUpcAPI.swift */; };
+		F4E78E8020E72B7700DDFD8E /* ZCDates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E78E7D20E72B3300DDFD8E /* ZCDates.framework */; };
+		F4E78E8120E72B7700DDFD8E /* ZCDates.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4E78E7D20E72B3300DDFD8E /* ZCDates.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4E7AB9020B05A870032AD00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E7AB8F20B05A870032AD00 /* AppDelegate.swift */; };
 		F4E7AB9820B05A870032AD00 /* Doctor_Kit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4E7AB9620B05A870032AD00 /* Doctor_Kit.xcdatamodeld */; };
 		F4E7AB9A20B05A870032AD00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E7AB9920B05A870032AD00 /* Assets.xcassets */; };
 		F4FB818A20E67B03000D03D1 /* AppointmentEditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FB818920E67B03000D03D1 /* AppointmentEditionViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4E78E7C20E72B3300DDFD8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4E78E7720E72B3200DDFD8E /* ZCDates.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F43B98C920A8DDED0065FD6F;
+			remoteInfo = ZCDates;
+		};
+		F4E78E7E20E72B3300DDFD8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4E78E7720E72B3200DDFD8E /* ZCDates.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F43B98D220A8DDED0065FD6F;
+			remoteInfo = ZCDatesTests;
+		};
+		F4E78E8220E72B7700DDFD8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4E78E7720E72B3200DDFD8E /* ZCDates.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F43B98C820A8DDED0065FD6F;
+			remoteInfo = ZCDates;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4E78E8420E72B7700DDFD8E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4E78E8120E72B7700DDFD8E /* ZCDates.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F894F316C30D0AECFC9BD10 /* Pods_Doctor_Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doctor_Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +108,8 @@
 		F4E78E6F20E6A47100DDFD8E /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		F4E78E7020E6A5A400DDFD8E /* AddNewScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewScheduleViewController.swift; sourceTree = "<group>"; };
 		F4E78E7220E6AC2300DDFD8E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F4E78E7520E7202100DDFD8E /* HealthUpcAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthUpcAPI.swift; sourceTree = "<group>"; };
+		F4E78E7720E72B3200DDFD8E /* ZCDates.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZCDates.xcodeproj; path = ZCDates/ZCDates.xcodeproj; sourceTree = "<group>"; };
 		F4E7AB8C20B05A870032AD00 /* Doctor-Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doctor-Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E7AB8F20B05A870032AD00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4E7AB9720B05A870032AD00 /* Doctor_Kit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Doctor_Kit.xcdatamodel; sourceTree = "<group>"; };
@@ -81,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67DDB735221EF4051F69CA91 /* Pods_Doctor_Kit.framework in Frameworks */,
+				F4E78E8020E72B7700DDFD8E /* ZCDates.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +303,27 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		F4E78E7420E71FB200DDFD8E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F4E78E7520E7202100DDFD8E /* HealthUpcAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F4E78E7820E72B3200DDFD8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4E78E7D20E72B3300DDFD8E /* ZCDates.framework */,
+				F4E78E7F20E72B3300DDFD8E /* ZCDatesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F4E7AB8320B05A870032AD00 = {
 			isa = PBXGroup;
 			children = (
+				F4E78E7720E72B3200DDFD8E /* ZCDates.xcodeproj */,
 				F4E7AB8E20B05A870032AD00 /* Doctor-Kit */,
 				F4E7AB8D20B05A870032AD00 /* Products */,
 				34EE51128906D3E3B5ECC1E2 /* Pods */,
@@ -280,6 +342,7 @@
 		F4E7AB8E20B05A870032AD00 /* Doctor-Kit */ = {
 			isa = PBXGroup;
 			children = (
+				F4E78E7420E71FB200DDFD8E /* Network */,
 				F4DFF46F20E0346D00E70E32 /* Models */,
 				F451800820CB74BE004E8CB8 /* Global */,
 				F451800520CB740B004E8CB8 /* Util */,
@@ -308,10 +371,12 @@
 				F4E7AB8A20B05A870032AD00 /* Resources */,
 				E4F3F8179528527514EE73FC /* [CP] Embed Pods Frameworks */,
 				1E393C9B4E0A110B87AEC3B7 /* [CP] Copy Pods Resources */,
+				F4E78E8420E72B7700DDFD8E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F4E78E8320E72B7700DDFD8E /* PBXTargetDependency */,
 			);
 			name = "Doctor-Kit";
 			productName = "Doctor-Kit";
@@ -345,12 +410,35 @@
 			mainGroup = F4E7AB8320B05A870032AD00;
 			productRefGroup = F4E7AB8D20B05A870032AD00 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F4E78E7820E72B3200DDFD8E /* Products */;
+					ProjectRef = F4E78E7720E72B3200DDFD8E /* ZCDates.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F4E7AB8B20B05A870032AD00 /* Doctor-Kit */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F4E78E7D20E72B3300DDFD8E /* ZCDates.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ZCDates.framework;
+			remoteRef = F4E78E7C20E72B3300DDFD8E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4E78E7F20E72B3300DDFD8E /* ZCDatesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ZCDatesTests.xctest;
+			remoteRef = F4E78E7E20E72B3300DDFD8E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F4E7AB8A20B05A870032AD00 /* Resources */ = {
@@ -412,12 +500,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Doctor-Kit/Pods-Doctor-Kit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQDropDownTextField/IQDropDownTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TableFlip/TableFlip.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQDropDownTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TableFlip.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +537,7 @@
 				F4DFF47120E034A500E70E32 /* Medic.swift in Sources */,
 				F451800A20CB74CA004E8CB8 /* Global.swift in Sources */,
 				F4E7AB9820B05A870032AD00 /* Doctor_Kit.xcdatamodeld in Sources */,
+				F4E78E7620E7202100DDFD8E /* HealthUpcAPI.swift in Sources */,
 				F4E7AB9020B05A870032AD00 /* AppDelegate.swift in Sources */,
 				F4DFF46A20E0306300E70E32 /* ScheduleTableViewCell.swift in Sources */,
 				F451800720CB7421004E8CB8 /* ColorUtil.swift in Sources */,
@@ -455,6 +548,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4E78E8320E72B7700DDFD8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZCDates;
+			targetProxy = F4E78E8220E72B7700DDFD8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F4E7AB9F20B05A870032AD00 /* Debug */ = {
@@ -568,6 +669,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE8FFDE5BBB15153DF0AFAFB /* Pods-Doctor-Kit.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5F6DV8X9;
@@ -584,6 +686,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6300EF87BC2D5D0D99315134 /* Pods-Doctor-Kit.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED5F6DV8X9;
