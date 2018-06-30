@@ -17,6 +17,7 @@ class HealthUpcAPI {
 	public static let createSchedule = "\(baseUrl)/doctors/work_hours"
 	public static let getDoctorAppointments = "\(baseUrl)/doctors/%@/appointments"
 	public static let getPatient = "\(baseUrl)/patients/%@"
+	public static let editAppointment = "\(baseUrl)/appointments/%@"
 }
 
 

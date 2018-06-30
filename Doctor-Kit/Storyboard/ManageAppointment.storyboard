@@ -192,7 +192,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hL8-SM-CUb" customClass="RoundCornerButton" customModule="Doctor_Kit" customModuleProvider="target">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hL8-SM-CUb" customClass="RoundCornerButton" customModule="Doctor_Kit" customModuleProvider="target">
                                                 <rect key="frame" x="25" y="740" width="325" height="60"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -245,7 +245,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Appointment Detail" id="VP6-HJ-a0d">
                         <barButtonItem key="backBarButtonItem" title="back" id="gfj-hF-oRL"/>
-                        <barButtonItem key="rightBarButtonItem" title="Edit" id="gdS-O1-70z">
+                        <barButtonItem key="rightBarButtonItem" id="gdS-O1-70z">
                             <connections>
                                 <action selector="goEditAppointmentAction:" destination="HlP-1X-Fc6" id="baV-g7-OVO"/>
                             </connections>
@@ -437,7 +437,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huq-ZB-eoF" customClass="RoundCornerButton" customModule="Doctor_Kit" customModuleProvider="target">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huq-ZB-eoF" customClass="RoundCornerButton" customModule="Doctor_Kit" customModuleProvider="target">
                                                 <rect key="frame" x="25" y="740" width="325" height="60"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
