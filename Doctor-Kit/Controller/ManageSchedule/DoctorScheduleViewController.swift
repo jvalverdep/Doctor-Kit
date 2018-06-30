@@ -51,16 +51,9 @@ class DoctorScheduleViewController: UIViewController {
 	}
 	
 	
-	
-	
-	
 }
 
 extension DoctorScheduleViewController: UITableViewDelegate{
-	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		performSegue(withIdentifier: "addSchedule", sender: nil)
-	}
-	
 	
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 		return UITableViewAutomaticDimension
@@ -74,7 +67,7 @@ extension DoctorScheduleViewController: UITableViewDataSource{
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "doctorScheduleCell") as! DoctorScheduleTableViewCell
 		let scheduleHours = doctorScheduledHours[indexPath.row]
-		cell.scheduledHoursLabel.text = "\(scheduleHours.beginHour.zGetHourMinutes(scheduleHours.beginHour)) - \(scheduleHours.endHour.zGetHourMinutes(scheduleHours.endHour))"
+		cell.scheduledHoursLabel.text = "\(scheduleHours.beginHour.zGetHourMinutes(scheduleHours.beginHour))Hrs - \(scheduleHours.endHour.zGetHourMinutes(scheduleHours.endHour))Hrs"
 		cell.dayNameLabel.text = scheduleHours.beginHour.zDayName()
 		cell.decoratorView.backgroundColor = ColorUtil.hexStringToUIColor(hex: COLOR_BASE)
 		cell.selectionStyle = .none

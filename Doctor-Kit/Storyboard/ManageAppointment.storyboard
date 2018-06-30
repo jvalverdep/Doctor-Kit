@@ -520,7 +520,7 @@
         <scene sceneID="oPB-cl-ogY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wjJ-cu-pFC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Appointments" id="gGu-sT-pet"/>
+                    <tabBarItem key="tabBarItem" title="Appointments" image="ic_appointment" id="gGu-sT-pet"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MWW-es-i3f">
@@ -537,4 +537,7 @@
             <point key="canvasLocation" x="1" y="-171"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_appointment" width="25" height="25"/>
+    </resources>
 </document>

@@ -174,7 +174,7 @@
         <scene sceneID="tDU-Zg-ILt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BXh-BA-1hv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" id="YvI-Z4-iAh"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="ic_schedule" id="YvI-Z4-iAh"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0rd-o2-zaD">
@@ -191,4 +191,7 @@
             <point key="canvasLocation" x="-270" y="215"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_schedule" width="25" height="25"/>
+    </resources>
 </document>
