@@ -43,17 +43,17 @@ class AppointmentDetailViewController: UIViewController {
 	
 	
 	fileprivate func setup(with appointment: Appointment){
-//		patientNameLabel.text = appointment.name
-//		patientGenderLabel.text = appointment.gender
-//		appointmentDayLabel.text = appointment.beginHour.zDayAndMonth()
-//		
-//		
-//		
-//		appointmentHoursLabel.text = "\(appointment.beginHour.zGetHourMinutes(appointment.beginHour)) - \(appointment.endHour.zGetHourMinutes(appointment.endHour))"
-//		patientWeightLabel.text = (appointment.weight.isEmpty ? "Empty" : appointment.weight)
-//		patientHeightLabel.text = (appointment.height.isEmpty ? "Empty" : appointment.height)
-//		patientGlucoseLabel.text = (appointment.glucose.isEmpty ? "Empty" : appointment.glucose)
-//		patientNotesTextView.text = (appointment.notes.isEmpty ? "Empty" : appointment.notes)
+		patientNameLabel.text = appointment.name
+		patientGenderLabel.text = appointment.gender
+		appointmentDayLabel.text = appointment.beginHour.zDayAndMonth()
+		
+		
+		
+		appointmentHoursLabel.text = "\(appointment.beginHour.zGetHourMinutes(appointment.beginHour)) - \(appointment.endHour.zGetHourMinutes(appointment.endHour))"
+		patientWeightLabel.text = (appointment.weight.isEmpty ? "Empty" : appointment.weight)
+		patientHeightLabel.text = (appointment.height.isEmpty ? "Empty" : appointment.height)
+		patientGlucoseLabel.text = (appointment.glucotest.isEmpty ? "Empty" : appointment.glucotest)
+		patientNotesTextView.text = (appointment.notes.isEmpty ? "Empty" : appointment.notes)
 	}
 
 	

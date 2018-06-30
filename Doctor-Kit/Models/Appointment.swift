@@ -19,18 +19,46 @@ class Appointment{
 	var gender = ""
 	var weight = ""
 	var height = ""
-	var glucose = ""
+	var glucotest = ""
 	var notes = ""
+	var reason = ""
+	var patientId = 0
 	
 	public init(beginHour: Date, endHour: Date) {
 		self.beginHour = beginHour
 		self.endHour = endHour
 	}
 	
+	
+	
 	public static func from(jsonAppointment: JSON) -> Appointment {
 		
-		return Appointment(beginHour: jsonAppointment["start"].stringValue.zGetDate()!,
-									 endHour: jsonAppointment["end"].stringValue.zGetDate()!)
+		
+		if let appointment = jsonAppointment["appointment"].dictionary{
+			if	let patientId = appointment["patient_id"]!.int,
+					let reason = appointment["reason"]!.string,
+					let notes = appointment["notes"]!.string,
+					let schedules = appointment["dot"]?.dictionary,
+					let opTimes = schedules["operation_time"]?.dictionary,
+					let start = opTimes["start"]?.string,
+					let end = opTimes["end"]?.string{
+				
+				let height = appointment["height"]!.doubleValue
+				let weight = appointment["weight"]!.doubleValue
+				let glucotest = appointment["glucotest"]!.doubleValue
+				
+				let appointmentObj = Appointment(beginHour: start.zGetDate()!,endHour: end.zGetDate()!)
+				appointmentObj.patientId = patientId
+				appointmentObj.reason = reason
+				appointmentObj.notes = notes
+				appointmentObj.height = "\(height)"
+				appointmentObj.weight = "\(weight)"
+				appointmentObj.glucotest = "\(glucotest)"
+				
+				return appointmentObj
+			}
+		}
+		return Appointment(beginHour: Date(), endHour: Date())
 	}
 	
 	public static func from(jsonAppointments: [JSON]) -> [Appointment] {
