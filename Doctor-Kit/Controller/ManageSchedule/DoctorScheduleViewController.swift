@@ -32,12 +32,14 @@ class DoctorScheduleViewController: UIViewController {
 			switch response.result {
 			case .success(let value):
 				let json = JSON(value)
+				
 				if let scheduledHours = json["operation_times"].array{
 					self.doctorScheduledHours = DoctorSchedule.from(jsonDoctorSchedules: scheduledHours)
 					DispatchQueue.main.async {
 						self.doctorScheduleTableView.reloadData()
 					}
 				}
+				
 			case .failure(let error):
 				print(error)
 			}
