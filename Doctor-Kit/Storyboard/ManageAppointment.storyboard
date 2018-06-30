@@ -51,7 +51,7 @@
         <!--Appointment Detail-->
         <scene sceneID="S8h-dq-HMs">
             <objects>
-                <viewController id="HlP-1X-Fc6" customClass="AppointmentDetailViewController" customModule="Doctor_Kit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="appointmentDetail" id="HlP-1X-Fc6" customClass="AppointmentDetailViewController" customModule="Doctor_Kit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CPd-XZ-Jc8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,7 +253,16 @@
                     </navigationItem>
                     <size key="freeformSize" width="375" height="900"/>
                     <connections>
-                        <segue destination="wfb-ot-viU" kind="show" id="Wfy-bz-iGu"/>
+                        <outlet property="appointmentDayLabel" destination="56p-cg-yjY" id="Ng6-B6-9YF"/>
+                        <outlet property="appointmentHoursLabel" destination="eSx-b4-4Cu" id="8b2-cf-K4m"/>
+                        <outlet property="patientGenderLabel" destination="Rul-7d-tML" id="lsx-Xm-fij"/>
+                        <outlet property="patientGlucoseLabel" destination="SqY-vF-TkK" id="PMl-bN-IVs"/>
+                        <outlet property="patientHeightLabel" destination="TFk-No-Kjf" id="xHh-d1-4iS"/>
+                        <outlet property="patientNameLabel" destination="fZt-BU-frw" id="6ns-6a-KAV"/>
+                        <outlet property="patientNotesTextView" destination="WJ8-tT-KZp" id="YYq-zY-4LY"/>
+                        <outlet property="patientPhotoImageView" destination="uN7-Wx-AMT" id="ccD-hm-9KT"/>
+                        <outlet property="patientWeightLabel" destination="nTx-1k-Wan" id="AWO-2x-Eaq"/>
+                        <segue destination="wfb-ot-viU" kind="show" identifier="editAppointment" id="Wfy-bz-iGu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ayq-I9-ZRV" userLabel="First Responder" sceneMemberID="firstResponder"/>

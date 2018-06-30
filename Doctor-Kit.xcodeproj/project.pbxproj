@@ -35,6 +35,8 @@
 		F4E78E7620E7202100DDFD8E /* HealthUpcAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E78E7520E7202100DDFD8E /* HealthUpcAPI.swift */; };
 		F4E78E8020E72B7700DDFD8E /* ZCDates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E78E7D20E72B3300DDFD8E /* ZCDates.framework */; };
 		F4E78E8120E72B7700DDFD8E /* ZCDates.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4E78E7D20E72B3300DDFD8E /* ZCDates.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4E78E8620E73E3500DDFD8E /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E78E8520E73E3500DDFD8E /* UserAPI.swift */; };
+		F4E78E8820E7467900DDFD8E /* DoctorSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E78E8720E7467900DDFD8E /* DoctorSchedule.swift */; };
 		F4E7AB9020B05A870032AD00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E7AB8F20B05A870032AD00 /* AppDelegate.swift */; };
 		F4E7AB9820B05A870032AD00 /* Doctor_Kit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4E7AB9620B05A870032AD00 /* Doctor_Kit.xcdatamodeld */; };
 		F4E7AB9A20B05A870032AD00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E7AB9920B05A870032AD00 /* Assets.xcassets */; };
@@ -110,6 +112,8 @@
 		F4E78E7220E6AC2300DDFD8E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F4E78E7520E7202100DDFD8E /* HealthUpcAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthUpcAPI.swift; sourceTree = "<group>"; };
 		F4E78E7720E72B3200DDFD8E /* ZCDates.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZCDates.xcodeproj; path = ZCDates/ZCDates.xcodeproj; sourceTree = "<group>"; };
+		F4E78E8520E73E3500DDFD8E /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		F4E78E8720E7467900DDFD8E /* DoctorSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorSchedule.swift; sourceTree = "<group>"; };
 		F4E7AB8C20B05A870032AD00 /* Doctor-Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doctor-Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E7AB8F20B05A870032AD00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4E7AB9720B05A870032AD00 /* Doctor_Kit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Doctor_Kit.xcdatamodel; sourceTree = "<group>"; };
@@ -273,6 +277,7 @@
 			children = (
 				F4DFF47020E034A500E70E32 /* Medic.swift */,
 				F4DFF47220E034BD00E70E32 /* Appointment.swift */,
+				F4E78E8720E7467900DDFD8E /* DoctorSchedule.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				F4E78E7520E7202100DDFD8E /* HealthUpcAPI.swift */,
+				F4E78E8520E73E3500DDFD8E /* UserAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -527,6 +533,7 @@
 				F4DFF47320E034BD00E70E32 /* Appointment.swift in Sources */,
 				F4E78E7320E6AC2300DDFD8E /* Constants.swift in Sources */,
 				F451800D20CB76F8004E8CB8 /* SimpleTextField.swift in Sources */,
+				F4E78E8820E7467900DDFD8E /* DoctorSchedule.swift in Sources */,
 				F4E78E7120E6A5A400DDFD8E /* AddNewScheduleViewController.swift in Sources */,
 				F451801A20CC14CA004E8CB8 /* DashboardViewController.swift in Sources */,
 				F4FB818A20E67B03000D03D1 /* AppointmentEditionViewController.swift in Sources */,
@@ -544,6 +551,7 @@
 				F4DFF47620E06F3B00E70E32 /* AppointmentDetailViewController.swift in Sources */,
 				F451800420CB7257004E8CB8 /* RoundCornerButton.swift in Sources */,
 				F451800F20CB7956004E8CB8 /* Gradient.swift in Sources */,
+				F4E78E8620E73E3500DDFD8E /* UserAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
